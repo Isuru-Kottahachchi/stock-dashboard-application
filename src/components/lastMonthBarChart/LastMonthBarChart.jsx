@@ -80,7 +80,7 @@ const LastMonthBarChart = () => {
 
     return (
         <div className='LastMonthBarChart' style={{ width: '780px', height: '400px', marginLeft: '10px', marginRight: '50px' }}>
-            <h3>Last Month Min/Max Values</h3>
+            <h3>Last Month High/Low Values</h3>
             <Bar data={data} options={options} />
         </div>
     );

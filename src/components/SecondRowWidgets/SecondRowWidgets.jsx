@@ -3,8 +3,6 @@ import "./secondRowWidgets.scss"
 
 function SecondRowWidgets({ type, value, date }) {
 
-    console.log("Levl two" + value);
-
     let data;
 
     switch (type) {

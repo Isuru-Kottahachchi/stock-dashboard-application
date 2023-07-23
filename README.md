@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+### Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React project to fetch important data from the stock API and display it to the end user
+
+### Guide to Run the project
+
+Before running this project, you have to clone it.
+To clone this, react project from GitHub and run it on your local machine, follow these steps:
+
+If you don't have Git installed on your computer, download and install it from the official website: https://git-scm.com/
+
+## Clone the React project:
+
+1.	Go to the GitHub repository of the stock-dashboard-application
+2.	Click on the "Code" button and copy the repository URL (you can choose to use HTTPS or SSH).
+3.	Open your terminal or command prompt.
+4.	Navigate to the directory where you want to clone the project.
+5.	Run the following command to clone the project:
+
+
 
 ## Available Scripts
 
