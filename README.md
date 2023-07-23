@@ -67,11 +67,17 @@ Users have to create their own API key to access data from the Polygon Stock API
 
 - Each left menu item is clickable, except the dashboard. If a user clicks on a menu item, expect dashboard, they will be led to a blank page by using a Link component in the react router DOM.
 
+When clicks on the Orders tab in left menue
+![Image-1](./Screenshot_3.png)
 - When the dashboard is loaded for the first time,by default, the date two days before today is selected in the date filter on navigation bar. The user can then choose a trading date using the date filter(calendar input) and check the high, low, and open values of a particular day.
 
-![Image-1](src\images\Screenshot_1.png)
+![Image-2](./Screenshot_1.png)
+![Image-3](./Screenshot_8.png)
+![Image-4](./Screenshot_7.png)
 
 - Users are able to see the high and low values of the previous month at the bottom of the dashboard in a grouped bar chart. (API does not provide weekend day high or low values)
+
+![Image-5](Screenshot_4.png)
 
 - Dummy data added to the doughnut chart (Circle-shaped chart) component in the dashboard as per the instructions.
 
@@ -123,3 +129,6 @@ allowed in free plan)
 
 ### Additional Screenshots
 
+![Image-6](./Screenshot_5.png)
+![Image-7](./Screenshot_6.png)
+![Image-8](Login.png)
