@@ -69,11 +69,11 @@ Users have to create their own API key to access data from the Polygon Stock API
 
 - When the dashboard is loaded for the first time,by default, the date two days before today is selected in the date filter on navigation bar. The user can then choose a trading date using the date filter(calendar input) and check the high, low, and open values of a particular day.
 
-![Image-1](./images/Screenshot 2023-07-23 133614.png)
+![Image-1](src\images\Screenshot_1.png)
 
 - Users are able to see the high and low values of the previous month at the bottom of the dashboard in a grouped bar chart. (API does not provide weekend day high or low values)
 
-- Dummy data was added to the doughnut chart (Circle-shaped chart) component in the dashboard as per the instructions.
+- Dummy data added to the doughnut chart (Circle-shaped chart) component in the dashboard as per the instructions.
 
 
 ## Used additional tools and libraries
@@ -109,8 +109,8 @@ react-testing library and jest.
 ## Observations
 
 - Sometimes Stocks API gives 403 and 404 errors when trying to fetch data from some trading 
-dates (especially Weekends). It also gives a 429 error when fetching a few dates.(Only 5 API Calls / Minute 
-allowed)
+dates (especially Weekends). It also gives a 429 error when fetching a few dates because it allows only 5 API Calls per minute.
+
 
 ## Note
 
