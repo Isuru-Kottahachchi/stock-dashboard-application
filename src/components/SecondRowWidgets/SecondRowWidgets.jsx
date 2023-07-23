@@ -6,6 +6,7 @@ function SecondRowWidgets({ type, value, date }) {
     let data;
 
     switch (type) {
+
         case "High":
             data = {
 
@@ -15,6 +16,7 @@ function SecondRowWidgets({ type, value, date }) {
 
             };
             break;
+
         case "Low":
             data = {
 
@@ -24,6 +26,7 @@ function SecondRowWidgets({ type, value, date }) {
 
             };
             break;
+
         case "Open":
             data = {
 
@@ -48,13 +51,9 @@ function SecondRowWidgets({ type, value, date }) {
             </div>
             <div className="right">
                 <div className='percentage'></div>
-
             </div>
 
         </div>
-
-
-
 
     )
 }

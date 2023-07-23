@@ -4,7 +4,7 @@ import "./dashboard.scss"
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
 import Widget from '../../components/widget/Widget'
-import SecondRowWidgets  from '../../components/SecondRowWidgets/SecondRowWidgets'
+import SecondRowWidgets from '../../components/SecondRowWidgets/SecondRowWidgets'
 import BarChart from '../../components/barChart/BarChart'
 import ChartContainer from '../../components/chartContainer/ChartContainer';
 
@@ -56,7 +56,7 @@ const Dashboard = () => {
 
                 <div className='widgetSecondLine'>
 
-                    <SecondRowWidgets  type="High" value={highValue} date={selectedDate} />
+                    <SecondRowWidgets type="High" value={highValue} date={selectedDate} />
                     <SecondRowWidgets oWidgets type="Low" value={lowValue} date={selectedDate} />
                     <SecondRowWidgets oWidgets type="Open" value={openValue} date={selectedDate} />
 

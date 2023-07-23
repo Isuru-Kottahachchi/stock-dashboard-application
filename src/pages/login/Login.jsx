@@ -18,10 +18,10 @@ const Login = () => {
                 <div className="left">
                     <form>
 
-                        <PersonOutlineSharpIcon  className='userClass'/>
+                        <PersonOutlineSharpIcon className='userClass' />
                         <input type="text" className='userName' placeholder="Username" />
 
-                        <LockOutlinedIcon className='passwordClass'/>
+                        <LockOutlinedIcon className='passwordClass' />
                         <input type="password" className='passwordName' placeholder="Password" />
                         <label>
                             <input
@@ -29,12 +29,14 @@ const Login = () => {
                             />
                             <span className='othertext'>  Remember me</span>  <span style={{ color: 'purple' }}> Forget password</span>
                         </label>
+
                         <button onClick={handleLogin}>Log in</button>
+
                         <p>Or <span style={{ color: 'purple' }}>register now!</span></p>
+
                     </form>
-
-
                 </div>
+                
                 <div className="right">
                     <img src={LoginImage} alt="LoginImage" />
                 </div>

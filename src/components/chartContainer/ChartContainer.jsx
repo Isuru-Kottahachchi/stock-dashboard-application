@@ -5,13 +5,14 @@ import LastMonthBarChart from '../lastMonthBarChart/LastMonthBarChart';
 import DoughnutChart from '../doughnutChart/DoughnutChart';
 
 const ChartContainer = () => {
+
     return (
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
 
             <div className="lastMonthChart" style={{ flex: 1 }}>
 
                 <LastMonthBarChart />
-                
+
             </div>
 
             <div className="donutChart" style={{ flex: 1 }}>

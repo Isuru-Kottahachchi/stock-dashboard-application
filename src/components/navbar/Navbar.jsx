@@ -13,13 +13,28 @@ const Navbar = ({ onHighValueChange, onLowValueChange, onOpenValueChange, onSele
     const [lowValue, setLowValue] = useState(null);
     const [openValue, setOpenValue] = useState(null);
 
+    const currentDate = new Date();
+
+    // Subtract two days from the current date
+    const twoDaysAgo = new Date(currentDate);
+    twoDaysAgo.setDate(currentDate.getDate() - 2);
+
+    // Format the date as a string (e.g., "YYYY-MM-DD")
+    const formattedDate = twoDaysAgo.toISOString().split('T')[0];
+
+    // The API does not provide data for today or yesterday, therefore, set the default date to two days from the current date.
+    useEffect(() => {
+        setSelectedDate(formattedDate);
+    }, [formattedDate]);
+
+
     const handleDateChange = (event) => {
         setSelectedDate(event.target.value);
     };
 
     const fetchData = () => {
 
-        const apiKey = 'bBvdgYkl6gTEp6kTK8GKhVrHnq8MN1R_';
+        const apiKey = 'bBvdgYkl6gTEp6kTK8GKhVrHnq8MN1R_'; // Stock API Key
         const stockSymbol = 'AAPL';
         const apiUrl = `https://api.polygon.io/v1/open-close/${stockSymbol}/${selectedDate}?adjusted=true&apiKey=${apiKey}`;
 
