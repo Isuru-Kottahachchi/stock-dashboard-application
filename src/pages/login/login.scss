@@ -1,0 +1,111 @@
+.login {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: 80%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 500px;
+        overflow: hidden;
+
+        .right {
+            flex: 1;
+
+            background-size: cover;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+
+            h1 {
+                font-size: 100px;
+                line-height: 100px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+        }
+
+        .left {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+
+            h1 {
+                color: #555;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+                bottom: 90px;
+
+                input {
+                    border: none;
+                    border: 1px solid lightgray;
+                    padding: 20px 10px;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 20px 10px;
+                    border: none;
+                    background-color: #8A2BE2;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .userName::placeholder {
+
+                    position: relative;
+                    left: 40px;
+
+                }
+
+                .passwordName::placeholder {
+                    position: relative;
+                    left: 40px;
+                }
+
+                .userClass {
+                    margin-left: 20px;
+                    position: relative;
+                    top: 50px;
+                }
+
+                .passwordClass {
+                    margin-left: 20px;
+                    position: relative;
+                    top: 50px;
+                }
+
+                .othertext {
+                    padding-top: 50px;
+                }
+
+
+
+
+            }
+
+            input[type="checkbox"]:checked {
+                background-color: #938eef;
+            }
+        }
+    }
+
+}
